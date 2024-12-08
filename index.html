@@ -221,6 +221,74 @@
     height: 450px;
     border: none;
 }
+/* Адаптация для мобильных устройств (максимальная ширина экрана 768px) */
+@media (max-width: 768px) {
+    /* Общие стили */
+    body {
+        padding: 10px; /* Уменьшенные отступы */
+    }
+
+    header {
+        padding: 50px 20px; /* Уменьшаем отступы в хедере */
+    }
+
+    .header-container {
+        flex-direction: column; /* Логотип и текст друг под другом */
+        text-align: center; /* Выравнивание по центру */
+    }
+
+    .header-logo {
+        width: 200px; /* Уменьшенный размер логотипа */
+    }
+
+    .header-logo-text {
+        font-size: 60px; /* Уменьшенный размер текста */
+    }
+
+    /* Секции */
+    section {
+        padding: 20px 10px; /* Уменьшенные внутренние отступы */
+    }
+
+    /* Галерея */
+    .gallery-grid img {
+        width: 100px; /* Уменьшенный размер изображений */
+        height: 100px;
+    }
+
+    .show-more-btn {
+        font-size: 14px; /* Меньший текст кнопки */
+        padding: 8px 15px; /* Уменьшенные отступы кнопки */
+    }
+
+    /* Таблица цен */
+    .price-table {
+        font-size: 14px; /* Меньший текст таблицы */
+    }
+
+    /* About секция */
+    .about-container {
+        flex-direction: column; /* Текст и фото друг под другом */
+    }
+
+    .photo_master {
+        max-width: 100%; /* Фото растягивается по ширине */
+        height: auto; /* Сохраняем пропорции */
+    }
+
+    .about-text {
+        text-align: center; /* Текст выравнивается по центру */
+    }
+
+    /* Карта */
+    #map {
+        padding: 20px; /* Уменьшаем отступы */
+    }
+
+    .map-container {
+        max-width: 100%; /* Растягиваем карту на всю ширину */
+    }
+}
 
 
     </style>
