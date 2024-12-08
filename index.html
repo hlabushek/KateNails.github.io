@@ -8,7 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         html{
    scroll-behavior: smooth;
-}
+} 
         /* Общий стиль */
         @font-face {
         font-family: 'Sunday';
@@ -24,6 +24,7 @@
             line-height: 1.6;
             background-color: #c9c7c7; /* Нежно-голубой фон */
             color: #333;
+            max-width: 100%;
             
         }
         header {
@@ -32,6 +33,7 @@
     color: white;
     padding: 185px;
     text-align: center;
+    max-width: 100%;
 }
 
         .header-container {
@@ -39,17 +41,20 @@
         align-items: center;
         justify-content: center;
         gap: 15px; /* Отступ между текстом и логотипом */
+        max-width: 100%;
         }
         .header-logo-text {
         font-family: 'Sunday', sans-serif;
         font-size: 130px;
         color: #cacaca;
         margin-left: 15px;
+        max-width: 100%;
         }
 
         .header-logo {
         width: 450px;
         height: auto; /* Сохраняет пропорции изображения */
+        max-width: 100%;
         }
 
         nav {
@@ -58,15 +63,18 @@
             background: #332b2c;
             padding: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
         }
         nav a {
             margin: 0 15px;
             text-decoration: none;
             color: #c9c7c7;
             font-weight: bold;
+            max-width: 100%;
         }
         nav a:hover {
             color: #f4b5d0;
+            max-width: 100%;
         }
         section {
             padding: 20px;
@@ -74,12 +82,14 @@
             margin: 0 auto;
             width: 100%; /* Занимает 100% ширины окна */
             box-sizing: border-box; /* Учитывает отступы и границы в ширине */
+            max-width: 100%;
         }
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
+            max-width: 100%;
         }
         #about {
     background-color: #c9c7c7;
@@ -88,40 +98,46 @@
     align-items: center; /* Вертикальное выравнивание по центру */
     justify-content: center; /* Горизонтальное выравнивание по центру */
     flex-direction: column; /* Размещаем элементы сверху вниз */
+    max-width: 100%;
 }
 
 .about-container {
     display: flex; /* Flexbox для размещения фото и текста */
     align-items: center; /* Выравнивание текста и фото по вертикали */
     gap: 20px; /* Расстояние между текстом и фото */
+    max-width: 100%;
 }
 
 .photo_master {
     max-height: 550px;
     width: auto;
     flex-shrink: 3;
+    max-width: 100%;
 }
 
 .about-text {
     flex: 1;
     text-align: left;
+    max-width: 100%;
 }
 
 
         #services {
             background-color: #c9c7c7;
-            
+            max-width: 100%;
         }
         #gallery {
             background-color: #c9c7c7;
-
+            max-width: 100%;
         }
         #contact {
             background-color: #c9c7c7;
+            max-width: 100%;
         }
         /* Галерея */
         #gallery {
             text-align: center;
+            max-width: 100%;
         }
         .gallery-grid {
             display: flex;
@@ -131,6 +147,7 @@
             max-height: 180px; /* Высота для отображения 4 изображений */
             overflow: hidden;
             transition: max-height 0.5s ease-in-out;
+            max-width: 100%;
         }
 
         .gallery-grid img {
@@ -141,9 +158,11 @@
             border: 2px solid #ddd;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            max-width: 100%;
         }
         .gallery-grid img:hover {
             transform: scale(1.1);
+            max-width: 100%;
         }
         .show-more-btn {
             margin-top: 20px;
@@ -155,14 +174,17 @@
             font-size: 16px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            max-width: 100%;
         }
         .show-more-btn:hover {
             background-color: #e18bb5;
+            max-width: 100%;
         }
 
         /* Раскрытая галерея */
         .expanded {
             max-height: 1000px; /* Увеличить высоту для показа всех фото */
+            max-width: 100%;
         }
 
         .price-table {
@@ -175,25 +197,30 @@
     color: #333;
     border-radius: 25px; /* Скругление углов таблицы */
     overflow: hidden; /* Скрываем содержимое, выходящее за границы */
+    max-width: 100%;
 }
 
 .price-table th, 
 .price-table td {
     border: 1px solid #ddd; /* Линии вокруг ячеек */
     padding: 10px; /* Отступ внутри ячеек */
+    max-width: 100%;
 }
 
 .price-table th {
     background-color: #f4b5d0; /* Фон для заголовков */
     color: white; /* Цвет текста заголовков */
+    max-width: 100%;
 }
 
 .price-table tr:nth-child(even) {
     background-color: #dddbdb; /* Светлый фон для чётных строк */
+    max-width: 100%;
 }
 
 .price-table tr:hover {
     background-color: #ffd7e8; /* Подсветка строки при наведении */
+    max-width: 100%;
 }
 
 /* Мелкий шрифт для пояснений */
@@ -201,16 +228,19 @@
     display: block;
     font-size: 5px;
     color: #777;
+    max-width: 100%;
 }
 .description {
     font-size: 13px;
     color: #777;
+    max-width: 100%;
 
 }
 #map {
     background-color: #c9c7c7;
     padding: 50px 20px;
     text-align: center;
+    max-width: 100%;
 }
 
 .map-container {
@@ -219,12 +249,14 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для карты */
     border-radius: 10px; /* Скругленные углы */
     overflow: hidden; /* Убирает лишние элементы за границами */
+    max-width: 100%;
 }
 
 .map-container iframe {
     width: 100%;
     height: 450px;
     border: none;
+    max-width: 100%;
 }
 
 /* Адаптация для мобильных устройств (максимальная ширина экрана 768px) */
@@ -234,61 +266,74 @@
         flex-direction: column; /* Логотип и текст друг под другом */
         text-align: center; /* Выравнивание по центру */
         width: 100%; /* Устанавливает 100% ширины */
+        max-width: 100%;
     }
 
     .header-logo {
         width: 200px; /* Уменьшенный размер логотипа */
+        max-width: 100%;
     }
 
     .header-logo-text {
         font-size: 60px; /* Уменьшенный размер текста */
+        max-width: 100%;
     }
 
     /* Секции */
     section {
         padding: 20px 10px; /* Уменьшенные внутренние отступы */
+        max-width: 100%;
     }
 
     /* Галерея */
     .gallery-grid img {
         width: 100px; /* Уменьшенный размер изображений */
         height: 100px;
+        max-width: 100%;
     }
 
     .show-more-btn {
         font-size: 14px; /* Меньший текст кнопки */
         padding: 8px 15px; /* Уменьшенные отступы кнопки */
+        max-width: 100%;
     }
 
     /* Таблица цен */
     .price-table {
         font-size: 14px; /* Меньший текст таблицы */
+        max-width: 100%;
     }
 
     /* About секция */
     .about-container {
         flex-direction: column; /* Текст и фото друг под другом */
+        max-width: 100%;
     }
 
     .photo_master {
         max-width: 100%; /* Фото растягивается по ширине */
         height: auto; /* Сохраняем пропорции */
+        max-width: 100%;
     }
 
     .about-text {
         text-align: center; /* Текст выравнивается по центру */
+        max-width: 100%;
     }
 
     /* Карта */
     #map {
         padding: 20px; /* Уменьшаем отступы */
+        max-width: 100%;
     }
 
     .map-container {
         max-width: 100%; /* Растягиваем карту на всю ширину */
+        max-width: 100%;
     }
     footer {
         width: 100%; /* Устанавливает 100% ширины */
+        max-width: 100%;
 
     }
 }
@@ -296,16 +341,20 @@
 
     nav {
         flex-direction: column; /* Ссылки друг под другом */
+        max-width: 100%;
     }
 
     nav a {
         margin: 10px 0; /* Отступы между ссылками */
+        max-width: 100%;
     }
     .header-logo {
         width: 150px; /* Уменьшенный размер логотипа */
+        max-width: 100%;
     }
     .header-logo-text {
         font-size: 40px; /* Уменьшенный размер текста */
+        max-width: 100%;
     }
     .photo_master {
         max-width: 100%; /* Фото растягивается по ширине */
